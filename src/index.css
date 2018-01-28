@@ -3,3 +3,74 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.App {
+  display: grid;
+  justify-items: center;
+  grid-gap: 50px
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  justify-self: stretch;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.validation-error{
+	font-size: 14px;
+	color: red;
+	margin-top: 10px;
+}
+.create-account{
+	display: grid;
+	background-color: #eee;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns:minmax(250px, 600px)
+}	
+.create-account h2{
+	background-color: rgba(175, 180, 43, 0.7);
+	text-align: center;
+	width: 80%;
+	justify-self: center;
+	padding: 10px 20px;
+}
+
+.create-account button{
+	padding: 20px;
+	width: 90%;
+	justify-self: center;
+	background-color: #9E9D24;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 30px;
+}
+.text-field input{
+	padding: 20px;
+	width: 90%;
+	border: none;
+	font-size: 1em;
+}
+.form-group{
+	position: relative;
+}
+
+.lbl{
+	position: absolute;
+	left: 5px;
+	top: 20px;
+	color: silver;
+	transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .lbl {
+  -webkit-transform: translateY(-125%);
+          transform: translateY(-125%);
+  font-size: .75em;
+}

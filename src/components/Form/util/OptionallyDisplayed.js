@@ -3,9 +3,9 @@ import { bool } from 'prop-types';
 
 export default function OptionallyDisplayed(props){
 	return(
-		this.props.display === true 
-			? <div>{this.props.children}</div>
-			: null;
+		props.display === true 
+			? <div>{props.children}</div>
+			: null
 		);
 }
 
